@@ -10,7 +10,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "OFFICE")
 public class Office {
@@ -23,7 +27,11 @@ public class Office {
 	private String nameOffice;
 	
 	@OneToMany(mappedBy = "office")
-	private Set<Car> car = new HashSet<>();
+	private Set<Car> cars = new HashSet<>();
+	
+	@OneToMany
+	private User user;
+	
 	
 	
 }
