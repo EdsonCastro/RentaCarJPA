@@ -27,11 +27,11 @@ public class Car {
 	private String carName;
 		
 	@ManyToOne
-	@Column(name = "OFFICE_CAR")
+	//@Column(name = "OFFICE_CAR")
 	private Office office;
 	
 	@ManyToOne
-	@Column(name = "RENT_CAR")
+	//@Column(name = "RENT_CAR")
 	private Rent rent;
 	
 	

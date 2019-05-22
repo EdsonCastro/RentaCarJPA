@@ -27,11 +27,11 @@ public class Office {
 	
 	
 	@OneToMany(mappedBy = "office")
-	@Column(name = "RENT_OFFICE")
+	//@Column(name = "RENT_OFFICE")
 	private Set<Car> rents = new HashSet<>();
 	
-	@OneToMany(mappedBy = "office")
-	@Column(name = "CARS_OFFICE")
+	@OneToMany(mappedBy = "idCar")
+	//@Column(name = "CARS_OFFICE")
 	private Set<Car> carsOffice = new HashSet<>();
 	
 }

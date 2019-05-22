@@ -27,7 +27,7 @@ public class User {
 	private String nameUser;
 	
 	@OneToMany(mappedBy = "user")
-	@Column(name = "USER_RENT")
+	//@Column(name = "USER_RENT")
 	private Set<Rent> rents = new TreeSet<>();
 	
 }

@@ -33,15 +33,15 @@ public class Rent {
 	private Date end;
 	
 	@ManyToOne
-	@Column(name = "USER_RENT")
+	//@Column(name = "USER_RENT")
 	private User user;
 
 	@ManyToOne
-	@Column(name = "OFFICE_RENT")
+	//@Column(name = "OFFICE_RENT")
 	private Office office;	
 	
 	@OneToMany(mappedBy = "rent")
-	@Column(name = "CARS_RENT")
+	//@Column(name = "CARS_RENT")
 	private Set<Car> carsRent = new HashSet<>();
 
 }
