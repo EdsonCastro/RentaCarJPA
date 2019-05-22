@@ -26,12 +26,13 @@ public class Office {
 	@Column(name = "NAME_OFFICE")
 	private String nameOffice;
 	
+	
 	@OneToMany(mappedBy = "office")
-	private Set<Car> cars = new HashSet<>();
+	@Column(name = "RENT_OFFICE")
+	private Set<Car> rents = new HashSet<>();
 	
-	@OneToMany
-	private User user;
-	
-	
+	@OneToMany(mappedBy = "office")
+	@Column(name = "CARS_OFFICE")
+	private Set<Car> carsOffice = new HashSet<>();
 	
 }
