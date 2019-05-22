@@ -1,5 +1,7 @@
 package com.example.rentacar.model;
 
+import java.util.Set;
+import java.util.TreeSet;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -26,6 +28,6 @@ public class User {
 	
 	@OneToMany(mappedBy = "user")
 	@Column(name = "USER_RENT")
-	private Rent rent;
+	private Set<Rent> rents = new TreeSet<>();
 	
 }
