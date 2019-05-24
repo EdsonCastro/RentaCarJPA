@@ -1,2 +1,2 @@
 # RentaCar
-Porject Maven con Spring
+Porject Maven con Spring only JPA
